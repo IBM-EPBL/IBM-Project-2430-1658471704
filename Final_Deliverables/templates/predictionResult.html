@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Prediction Result
+        </title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <body>
+            <div class="container right-panel-active">
+                <!-- Sign Up -->
+                <div class="container__form container--signup">
+                    <div class="form" id="form1">
+                        <h2 class="form__title">Result</h2>
+                        <h3  class="input"> {{Name}} </h3>
+                        <h3  class="input"> {{Age}} </h3>
+                        <h3  class="input"> {{Result}} </h3>
+                    </div>
+                </div>
+            
+                <!-- Overlay -->
+                <div class="container__overlay">
+                    <div class="overlay">
+                        <div class="overlay__panel overlay--left">
+                            <img src="../static/uploads/{{imageName}}" alt="A Hand Drawn Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>

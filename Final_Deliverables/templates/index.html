@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Parkinson Disease Prediction
+        </title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <body>
+            <div class="container right-panel-active">
+                <!-- Sign Up -->
+                <div class="container__form container--signup">
+                    <form action="http://localhost:5000/getDetails" method="POST" enctype="multipart/form-data" class="form" id="form1">
+                        <h2 class="form__title">Enter Details</h2>
+                        <input type="text" placeholder="Name" class="input" name="Name"/>
+                        <input type="text" placeholder="Age" class="input" name="Age"/>
+                        <input type="file" placeholder="Image" class="input" name="Image"/>
+                        <button class="btn">Predict</button>
+                    </form>
+                </div>
+            
+                <!-- Overlay -->
+                <div class="container__overlay">
+                    <div class="overlay">
+                        <div class="overlay__panel overlay--left">
+                            <button class="btn" id="signIn">Parkinson Disease Prediction</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </head>
+</html>
